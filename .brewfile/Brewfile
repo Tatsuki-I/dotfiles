@@ -1,0 +1,58 @@
+
+# tap repositories and their packages
+
+tap homebrew/core
+brew gdbm
+brew gdrive
+brew gettext
+brew git
+brew haskell-stack
+brew icu4c
+brew libevent
+brew libyaml
+brew lua
+brew mas
+brew mit-scheme
+brew ncurses
+brew node
+brew ocaml
+brew openssl
+brew pcre
+brew pcre2
+brew perl
+brew python
+brew readline
+brew reattach-to-user-namespace
+brew ruby
+brew rustup-init
+brew sl
+brew sqlite
+brew tmux
+brew vim
+brew xz
+brew zplug
+brew zsh
+brew zsh-completions
+
+tap homebrew/cask
+cask alfred
+cask clipy
+cask iterm2
+cask near-lock
+cask vivaldi
+
+tap rcmdnk/file
+brew brew-file
+
+# Other Cask applications
+cask appcleaner
+cask google-japanese-ime
+cask karabiner-elements
+cask slack
+
+# App Store applications
+appstore 1233965871 com.imagestudiopro.ScreenBrush (1.6.1)
+appstore 926036361 com.lastpass.LastPass (4.4.0)
+appstore 1176895641 com.readdle.smartemail-Mac (2.3.3)
+appstore 485812721 com.twitter.TweetDeck (3.16.1)
+appstore 539883307 jp.naver.line.mac (5.16.2)
