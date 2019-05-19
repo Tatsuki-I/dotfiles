@@ -13,6 +13,8 @@ predict-on
 # autoload -U compinit
 # compinit
 
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
