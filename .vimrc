@@ -27,6 +27,7 @@ set smarttab
 set ignorecase
 set smartcase
 set wildmenu
+set scrolloff=5
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8,cp932
 set fileformats=unix,dos,mac
