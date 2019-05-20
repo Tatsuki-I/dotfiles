@@ -42,6 +42,11 @@ set spelllang=en,cjk
 set list
 set listchars=tab:»-,trail:-,nbsp:%,eol:↲
 
+if has('presistent_undo')
+    set undodir=~/.vim/undo
+    set undofile
+endif
+
 "let g:seiya_auto_enable=1
 
 noremap! ^H <BS>
