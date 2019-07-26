@@ -1,5 +1,9 @@
 #!/bin/sh
 
+mkdir -p ~/.vim/colors
+mkdir -p ~/.vim/rc
+mkdir -p ~/.stack
+
 ln -sf ~/dotfiles/.bash_history ~/.bash_history
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.tmux.conf ~/.time_conf
