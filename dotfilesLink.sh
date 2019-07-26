@@ -4,14 +4,14 @@ mkdir -p ~/.vim/colors
 mkdir -p ~/.vim/rc
 mkdir -p ~/.stack
 
-ln -sf ./.bash_history ~/.bash_history
-ln -sf ./.gitconfig ~/.gitconfig
-ln -sf ./.tmux.conf ~/.time_conf
-ln -sf ./.vimrc ~/.vimrc
-ln -sf ./.zprofile ~/.zprofile
-ln -sf ./.zshrc ~/.zshrc
-ln -sf ./.brewfile/Brewfile ~/Brewfile
-ln -sf ./.vim/colors/hybrid.vim ~/.vim/colors/hybrid.vim
-ln -sf ./.vim/rc/dein.toml ~/.vim/rc/dein.toml
-ln -sf ./.vim/rc/dein_lazy.toml ~/.vim/rc/dein_lazy.toml
-ln -sf ./.stack/config.yaml ~/.stack/config.yaml
+ln -sf ~/dotfiles/.bash_history ~/.bash_history
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.tmux.conf ~/.time_conf
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.zprofile ~/.zprofile
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.brewfile/Brewfile ~/Brewfile
+ln -sf ~/dotfiles/.vim/colors/hybrid.vim ~/.vim/colors/hybrid.vim
+ln -sf ~/dotfiles/.vim/rc/dein.toml ~/.vim/rc/dein.toml
+ln -sf ~/dotfiles/.vim/rc/dein_lazy.toml ~/.vim/rc/dein_lazy.toml
+ln -sf ~/dotfiles/.stack/config.yaml ~/.stack/config.yaml
