@@ -47,3 +47,18 @@ if ! zplug check --verbose; then
         echo; zplug install
     fi
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tazki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tazki/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tazki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tazki/google-cloud-sdk/completion.zsh.inc'; fi
+
+export GCE_USER_NAME="tatsuki"
+export GCE_INSTANCE_NAME="bonnard"
+
+alias gce-up='gcloud compute instances start ${GCE_INSTANCE_NAME}'
+alias gce-ip='gcloud compute instances list --filter="name=${GCE_INSTANCE_NAME}"'
+alias gce-login='gcloud compute ssh ${GCE_USER_NAME}@${GCE_INSTANCE_NAME} -- -L 8000:localhost:8000 -L 8080:localhost:8080 -L 3000:localhost:3000'
+alias gce-start='gce-up && gce-ip && gce-login'
+export PATH="/usr/local/opt/llvm/bin:$PATH"

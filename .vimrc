@@ -41,7 +41,7 @@ set spelllang=en,cjk
 "match OverLength /\%>80v.\+/
 
 set list
-set listchars=tab:»-,trail:-,nbsp:%,eol:↲
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 if has('presistent_undo')
     set undodir=~/.vim/undo
