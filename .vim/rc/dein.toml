@@ -61,12 +61,6 @@ repo = 'airblade/vim-gitgutter'
 repo = 'elixir-lang/vim-elixir'
 
 [[plugins]]
-repo = 'eagletmt/ghcmod-vim'
-
-[[plugins]]
-repo = 'ujihisa/neco-ghc'
-
-[[plugins]]
 repo = 'dan-t/vim-hsimport'
 
 [[plugins]]
