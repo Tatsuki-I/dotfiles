@@ -2,6 +2,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 setopt auto_cd
+setopt nonomatch
 
 function chpwd() { ls }
 
@@ -10,8 +11,9 @@ bindkey -v
 autoload predict-on
 predict-on
 
-# autoload -U compinit
-# compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+eval "$(stack --bash-completion-script stack)"
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
@@ -48,11 +50,8 @@ if ! zplug check --verbose; then
     fi
 fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tazki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tazki/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/tazki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tazki/google-cloud-sdk/completion.zsh.inc'; fi
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 export GCE_USER_NAME="tatsuki"
 export GCE_INSTANCE_NAME="bonnard"

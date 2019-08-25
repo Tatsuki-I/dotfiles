@@ -5,6 +5,7 @@ set cursorline
 autocmd ColorScheme * highlight Normal ctermbg=none
 set background=dark
 colorscheme hybrid
+set encoding=utf-8
 hi LineNr ctermfg=3
 hi CursorLineNr ctermbg=4 ctermfg=0
 hi CursorLine ctermbg=0
@@ -28,8 +29,7 @@ set ignorecase
 set smartcase
 set wildmenu
 set scrolloff=5
-set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8,cp932
+set fileencodings=utf-8,euc-jp,sjis,cp932
 set fileformats=unix,dos,mac
 set textwidth=0
 hi ColorColumn ctermbg=1

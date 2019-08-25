@@ -392,3 +392,5 @@ curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machi
 ls
 sudo docker-machine create --driver virtualbox myvm1
 vim docker-compose.yml 
+stack exec -- PFAD-exe [0,1,2,3,5,6]
+zsh
