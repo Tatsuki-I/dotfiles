@@ -67,9 +67,6 @@ repo = 'dan-t/vim-hsimport'
 repo = 'parsonsmatt/vim2hs'
 
 [[plugins]]
-repo = 'eagletmt/ghcmod-vim'
-
-[[plugins]]
 repo = 'amdt/vim-niji'
 
 [[plugins]]
